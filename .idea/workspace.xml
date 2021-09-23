@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a43ee25a-5215-46f1-8bfa-c323653f6910" name="Changes" comment="Implemented authorize module. Made Profile page where you can see your profile or any users' profile. On page of Users you can follow or unfollow them. Dialogs and Posts work only with local state without using server. All other pages use server to get, post, put, delete.">
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="ProjectId" id="1wST5IJxzzjYUjTWZrlOmeGZy1I" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="nodejs.jest.jest_package" value="$PROJECT_DIR$/node_modules/react-scripts" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.JavaScript" />
+    <property name="ts.external.directory.path" value="C:\Users\kabgu\AppData\Local\JetBrains\Toolbox\apps\WebStorm\ch-0\212.4746.80\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\kabgu\Desktop\Projects\react_it\01-first-project\my-app\src\redux" />
+      <recent name="C:\Users\kabgu\Desktop\Projects\react_it\01-first-project\my-app\src\components\Header" />
+      <recent name="C:\Users\kabgu\Desktop\Projects\react_it\01-first-project\my-app\src\components\Profile" />
+      <recent name="C:\Users\kabgu\Desktop\Projects\react_it\01-first-project\my-app\src\components\Users" />
+      <recent name="C:\Users\kabgu\Desktop\Projects\react_it\01-first-project\my-app\src\components\Users\UserCard" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\kabgu\Desktop\Projects\react_it\01-first-project\my-app\src\components\Users\UserCard" />
+      <recent name="C:\Users\kabgu\Desktop\Projects\react_it\01-first-project\my-app\src\components\Profile" />
+      <recent name="C:\Users\kabgu\Desktop\Projects\react_it\01-first-project\my-app\src\components\Navbar" />
+      <recent name="C:\Users\kabgu\Desktop\Projects\react_it\01-first-project\my-app\src\components\Header" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Jest.renders without crashing">
+    <configuration name="post count should decrease" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/redux/profile-reducer.test.js" />
+      <test-names>
+        <test-name value="post count should decrease" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="posts count should increase" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/redux/profile-reducer.test.js" />
+      <test-names>
+        <test-name value="posts count should increase" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="posts text must be currect" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/redux/profile-reducer.test.js" />
+      <test-names>
+        <test-name value="posts text must be currect" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="renders learn react link" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/App.test.js" />
+      <test-names>
+        <test-name value="renders learn react link" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="renders without crashing" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/App.test.js" />
+      <test-names>
+        <test-name value="renders without crashing" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Jest.renders without crashing" />
+        <item itemvalue="Jest.renders learn react link" />
+        <item itemvalue="Jest.post count should decrease" />
+        <item itemvalue="Jest.posts text must be currect" />
+        <item itemvalue="Jest.posts count should increase" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a43ee25a-5215-46f1-8bfa-c323653f6910" name="Changes" comment="" />
+      <created>1628450805865</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1628450805865</updated>
+      <workItem from="1628450809125" duration="5751000" />
+      <workItem from="1628491276379" duration="2847000" />
+      <workItem from="1628531436642" duration="6825000" />
+      <workItem from="1628615017580" duration="9203000" />
+      <workItem from="1628689517089" duration="20480000" />
+      <workItem from="1628749423608" duration="1402000" />
+      <workItem from="1628755940160" duration="18226000" />
+      <workItem from="1628782495979" duration="1709000" />
+      <workItem from="1628786417292" duration="10865000" />
+      <workItem from="1628840597780" duration="8860000" />
+      <workItem from="1629096297468" duration="19878000" />
+      <workItem from="1629180763627" duration="27200000" />
+      <workItem from="1629273168677" duration="1728000" />
+      <workItem from="1629579874922" duration="608000" />
+      <workItem from="1629617021620" duration="612000" />
+      <workItem from="1630303157226" duration="8041000" />
+      <workItem from="1630321290364" duration="5892000" />
+      <workItem from="1630347659348" duration="17000" />
+      <workItem from="1630396917551" duration="185000" />
+      <workItem from="1630403808159" duration="12168000" />
+      <workItem from="1630423296699" duration="1192000" />
+      <workItem from="1630435859385" duration="4205000" />
+      <workItem from="1630479941429" duration="6487000" />
+      <workItem from="1630521155196" duration="1191000" />
+      <workItem from="1630563792770" duration="3895000" />
+      <workItem from="1630588608869" duration="13152000" />
+      <workItem from="1630648536795" duration="10552000" />
+      <workItem from="1630697064032" duration="83000" />
+      <workItem from="1630908818212" duration="2539000" />
+      <workItem from="1630914036740" duration="732000" />
+      <workItem from="1630933580978" duration="2244000" />
+      <workItem from="1630952955618" duration="1032000" />
+      <workItem from="1631000115039" duration="14958000" />
+      <workItem from="1631029022606" duration="6003000" />
+      <workItem from="1631080822236" duration="18090000" />
+      <workItem from="1631173401872" duration="16760000" />
+      <workItem from="1631213754353" duration="594000" />
+      <workItem from="1631256267102" duration="15909000" />
+      <workItem from="1631364851168" duration="31000" />
+      <workItem from="1631516359609" duration="5462000" />
+      <workItem from="1631531689072" duration="7962000" />
+      <workItem from="1631544357906" duration="31000" />
+      <workItem from="1631556764148" duration="5827000" />
+      <workItem from="1631600157816" duration="6025000" />
+      <workItem from="1631617362407" duration="5478000" />
+      <workItem from="1631686479205" duration="8543000" />
+      <workItem from="1631705369387" duration="3513000" />
+      <workItem from="1631730410199" duration="3299000" />
+      <workItem from="1631772245341" duration="4395000" />
+      <workItem from="1631790071485" duration="7850000" />
+      <workItem from="1631809412715" duration="3769000" />
+      <workItem from="1631859323455" duration="6540000" />
+      <workItem from="1631878967215" duration="5268000" />
+      <workItem from="1631900789865" duration="102000" />
+      <workItem from="1632117852151" duration="6775000" />
+      <workItem from="1632134346595" duration="5082000" />
+      <workItem from="1632164104067" duration="613000" />
+      <workItem from="1632205142328" duration="3481000" />
+      <workItem from="1632221849142" duration="5987000" />
+      <workItem from="1632242984623" duration="96000" />
+      <workItem from="1632291916418" duration="8087000" />
+      <workItem from="1632308970724" duration="803000" />
+      <workItem from="1632314687062" duration="5207000" />
+      <workItem from="1632340172445" duration="703000" />
+      <workItem from="1632377494913" duration="9196000" />
+    </task>
+    <task id="LOCAL-00001" summary="Implemented authorize module. Made Profile page where you can see your profile or any users' profile. On page of Users you can follow or unfollow them. Dialogs and Posts work only with local state without using server. All other pages use server to get, post, put, delete.">
+      <created>1632390024294</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1632390024294</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Implemented authorize module. Made Profile page where you can see your profile or any users' profile. On page of Users you can follow or unfollow them. Dialogs and Posts work only with local state without using server. All other pages use server to get, post, put, delete." />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented authorize module. Made Profile page where you can see your profile or any users' profile. On page of Users you can follow or unfollow them. Dialogs and Posts work only with local state without using server. All other pages use server to get, post, put, delete." />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/redux/store.js</url>
+          <line>115</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="JavaScriptTestRunnerJest">
+        <watch expression="el" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>
