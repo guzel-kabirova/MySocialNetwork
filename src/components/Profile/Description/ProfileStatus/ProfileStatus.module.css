@@ -1,0 +1,19 @@
+.stateWrapper {
+    margin-bottom: 20px;
+}
+.stateWrapper div {
+    font: var(--font-basic);
+    padding: 8px 0px;
+}
+.stateWrapper input {
+    box-sizing: border-box;
+    width: 100%;
+    height: 30px;
+    border: none;
+    border-radius: var(--radius-s);
+    font: var(--font-basic);
+    color: var(--color-black);
+    outline: none;
+    box-shadow: var(--input-shadow-active);
+    padding: 4px;
+}

@@ -1,0 +1,51 @@
+.wrapper {
+    display: flex;
+    padding: 10px 20px;
+    height: 70px;
+    box-sizing: border-box;
+    background-color: var(--color-white);
+    width: 100%;
+}
+
+.wrapper:hover {
+    background-color: var(--color-grey-light);
+}
+
+.ava {
+    width: 50px;
+    height: 50px;
+    margin-right: 8px;
+    border-radius: var(--radius-s);
+}
+
+.message {
+    width: 100%;
+}
+
+.messageInfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4px;
+
+}
+
+.messageInfo div:first-child {
+    font: var(--font-subtitle)
+}
+
+.messageInfo div:last-child {
+    font: var(--font-date);
+    color: var(--color-grey);
+}
+
+.messageText {
+    color: var(--color-grey);
+    height: 17px;
+    /*white-space: nowrap;*/
+    text-overflow: ellipsis;
+    overflow: hidden;
+    /*max-width: 262px;*/
+}
+
+

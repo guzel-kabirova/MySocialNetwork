@@ -1,0 +1,6 @@
+.background {
+    background-image: url("../../jpg/profile-background.jpg");
+    background-position: left top;
+    background-repeat: no-repeat;
+    padding: 40px;
+}

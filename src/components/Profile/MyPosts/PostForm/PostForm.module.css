@@ -1,0 +1,41 @@
+.inputBtn {
+    height: 120px;
+    background-color: var(--color-white);
+    border-radius: var(--radius-m);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: 28px 0 48px;
+    box-shadow: var(--card-shadow);
+}
+
+.textarea {
+    box-sizing: border-box;
+    width: 100%;
+    height: 68px;
+    border: none;
+    border-radius: 0;
+    font: var(--font-text);
+    color: var(--color-black);
+    resize: none;
+    outline: none;
+    box-shadow: none;
+}
+
+.textarea::placeholder {
+    color: var(--color-grey);
+}
+
+.btn {
+    border: none;
+    background-color: var(--color-black);
+    color: var(--color-white);
+    font: var(--font-subtitle);
+    border-radius: var(--radius-m);
+    padding: 5px 36px 7px;
+    letter-spacing: 0.045em;
+    width: 184px;
+    height: 32px;
+}

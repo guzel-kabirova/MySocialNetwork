@@ -1,0 +1,35 @@
+.header {
+    grid-area: header;
+    background-color: var(--color-grey);
+    display: flex;
+    align-items: center;
+}
+
+.header img {
+    margin-left: 12px;
+    width: 48px;
+    height: 48px;
+}
+.auth, .user {
+    color: var(--color-white);
+    font: var(--font-basic);
+    margin-right: 12px;
+    cursor: pointer;
+}
+.authName {
+    margin-right: 12px;
+    font-weight: bold;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+}
+.user img {
+    margin: 6px;
+    width: 32px;
+    height: 32px;
+}
+.flexSpacer {
+    flex-grow: 1;
+}

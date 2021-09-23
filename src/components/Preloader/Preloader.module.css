@@ -1,0 +1,10 @@
+.wrapperImg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 60px);
+}
+.wrapperImg img {
+    height: 64px;
+    width: 64px;
+}

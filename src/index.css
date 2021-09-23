@@ -11,3 +11,32 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+:root {
+  --color-black: #150E08;
+  --color-white: #FFFFFF;
+  --color-grey: #797878;
+  --color-grey-light: #F1F1F1;
+  --color-grey-background: #F7F7F7;
+  --color-primary: #FFE4E2;
+  --color-errors: #FC5D2D;
+
+  --font-fallback: -apple-system, 'BlinkMacSystemFont', system-ui, 'Roboto', 'Segoe UI', 'Helvetica Neue', sans-serif;
+  --app-font: Century Gothic, var(--font-fallback);
+  --font-basic: normal 18px/22px var(--app-font);
+  --font-title: normal 36px/44px var(--app-font);
+  --font-subtitle: normal 16px/20px var(--app-font);
+  --font-page-name: normal 28px/24px var(--app-font);
+  --font-text: normal 14px/17px var(--app-font);
+  --font-date: normal 12px/15px var(--app-font);
+
+  --card-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  --input-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+  --input-shadow-active: 0px 0px 30px rgba(0, 0, 0, 0.2);
+
+  --radius-m: 16px;
+  --radius-s: 8px;
+}
+
+
+

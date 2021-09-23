@@ -1,0 +1,89 @@
+.container {
+    padding: 20px 40px 40px;
+}
+
+.pageName {
+    font: var(--font-page-name);
+    margin-bottom: 40px;
+}
+.personCard {
+    background-color: var(--color-white);
+    display: flex;
+    border-radius: var(--radius-m);
+    padding: 20px;
+    box-shadow: var(--card-shadow);
+    height: 130px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.personCardInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 90px;
+
+}
+.photo {
+    border-radius: var(--radius-m);
+    margin-right: 20px;
+    width: 90px;
+    height: 90px;
+}
+
+.personCardName {
+    font: var(--font-basic);
+}
+
+.wrapperTop {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4px;
+}
+.wrapperTop p {
+    font: var(--font-subtitle);
+}
+.table {
+    display:table;
+    table-layout: fixed;
+    width: 100%;
+}
+.status {
+    color: var(--color-grey);
+    display: table-cell;
+    vertical-align: middle;
+    white-space:nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.btn {
+    border: none;
+    background-color: var(--color-black);
+    color: var(--color-white);
+    font: var(--font-subtitle);
+    border-radius: var(--radius-m);
+    padding: 5px 10px 4px;
+    letter-spacing: 0.045em;
+    width: 184px;
+    height: 32px;
+}
+.btn:disabled {
+    background-color: var(--color-grey-light);
+    color: var(--color-grey);
+    box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.15);
+}
+.btnPrimary {
+    margin-top: 80px;
+    background-color: var(--color-primary);
+    color: var(--color-black);
+}
+
+.btnFollow {
+    background-color: var(--color-black);
+    color: var(--color-white);
+}
+
+.btnUnfollow {
+    background-color: var(--color-grey);
+    color: var(--color-white);
+}

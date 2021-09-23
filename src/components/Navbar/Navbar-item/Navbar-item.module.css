@@ -1,0 +1,25 @@
+.item {
+    font: normal 18px Century Gothic, sans-serif;
+    padding: 12px 24px;
+}
+
+a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #797878;
+}
+
+.item:hover {
+    background-color: #F1F1F1;
+}
+
+.icon {
+    display: block;
+    margin-right: 16px;
+}
+
+.activeLink {
+    color: #150E08;
+    text-decoration: none;
+}

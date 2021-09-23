@@ -1,0 +1,18 @@
+.descriptionItem {
+    display: flex;
+}
+
+.descriptionItem span {
+    font: normal 16px Century Gothic, Arial, sans-serif;
+    margin-bottom: 8px;
+}
+
+.descriptionItem span:first-child {
+    color: #797878;
+    width: 168px;
+}
+
+.descriptionItem span:last-child {
+    color: #150E08;
+}
+

@@ -1,0 +1,20 @@
+.wrapper {
+    background-color: var(--color-white);
+    box-shadow: var(--card-shadow);
+    max-width: fit-content;
+    min-width: auto;
+    border-radius: var(--radius-m);
+    margin-bottom: 20px;
+    padding: 20px;
+    flex-grow: 1;
+}
+
+.wrapper p {
+    margin-bottom: 12px;
+}
+
+.wrapper div {
+    display: flex;
+    justify-content: flex-end;
+    color: var(--color-grey);
+}

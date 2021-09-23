@@ -1,0 +1,82 @@
+.dialogs {
+    display: grid;
+    grid-template-areas: "messages person";
+    grid-template-columns: 8fr 4fr;
+    justify-content: space-between;
+}
+
+.dialogsMessages {
+    grid-area: messages;
+    height: calc(100vh - 60px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.messagesWrapper {
+    padding: 20px 40px;
+    overflow: auto;
+}
+
+.dialogsPersons {
+    background-color: var(--color-white);
+    grid-area: person;
+    height: calc(100vh - 60px);
+    overflow: auto;
+}
+
+.input {
+    padding: 20px 20px 24px;
+    position: sticky;
+    top: 0;
+    background-color: #ffffff;
+}
+
+.input input {
+    width: 100%;
+    box-sizing: border-box;
+    height: 28px;
+    border-radius: var(--radius-s);
+    padding: 4px 8px;
+    border: none;
+    box-shadow: var(--input-shadow);
+    outline: none;
+}
+
+.input input:focus, .input input:active {
+    box-shadow: var(--input-shadow-active);
+}
+
+.inputBtn {
+    height: 40px;
+    background-color: var(--color-white);
+    border-radius: 0;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: var(--card-shadow);
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.textarea {
+    box-sizing: border-box;
+    width: 100%;
+    border: none;
+    border-radius: 0;
+    font: var(--font-text);
+    color: var(--color-black);
+    resize: none;
+    outline: none;
+    box-shadow: none;
+}
+
+.btn {
+    border: none;
+    border-radius: 0;
+    background-color: transparent;
+    padding: 10px;
+}
