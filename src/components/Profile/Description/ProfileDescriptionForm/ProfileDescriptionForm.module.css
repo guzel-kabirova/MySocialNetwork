@@ -1,0 +1,86 @@
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+.sectionName {
+    display: block;
+    font: normal 16px Century Gothic, Arial, sans-serif;
+    margin-bottom: 16px;
+    color: var(--color-grey);
+    font-weight: bold;
+}
+.label {
+    font: normal 16px Century Gothic, Arial, sans-serif;
+    color: var(--color-grey)
+}
+
+.inputWrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.checkboxWrapper {
+    width: 50%;
+}
+
+.btn {
+    border: none;
+    background-color: var(--color-primary);
+    color: var(--color-black);
+    font: var(--font-subtitle);
+    border-radius: var(--radius-m);
+    padding: 5px 20px 7px;
+    letter-spacing: 0.045em;
+    width: 184px;
+    height: 32px;
+    cursor: pointer;
+}
+
+.contacts input, .input, .checkbox {
+    box-sizing: border-box;
+    width: 50%;
+    height: 30px;
+    border: none;
+    border-radius: var(--radius-s);
+    font: var(--font-subtitle);
+    color: var(--color-black);
+    outline: none;
+    box-shadow: var(--input-shadow-active);
+    padding: 4px;
+    margin-bottom: 8px;
+}
+
+.checkbox {
+    width: 20px;
+    height: 20px;
+}
+
+.about textarea {
+    box-sizing: border-box;
+    width: 50%;
+    height: 60px;
+    border: none;
+    border-radius: var(--radius-s);
+    font: var(--font-subtitle);
+    color: var(--color-black);
+    outline: none;
+    box-shadow: var(--input-shadow-active);
+    padding: 4px;
+    margin-bottom: 8px;
+    resize: none;
+}
+
+.infoText {
+    flex-grow: 1;
+}
+
+.topWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.name {
+    margin: 0 0 4px;
+    font: var(--font-title);
+}
