@@ -23,7 +23,7 @@ const ProfileStatus = (props) => {
         }, [props.status]
     );
     return <div className={classes.stateWrapper}>
-        {!editMode && <div onDoubleClick={activateEditMode}>
+        {!editMode && <div onDoubleClick={props.isOwner && activateEditMode}>
             {props.status || '----------'}
         </div>}
         {editMode && <input onChange={onStatusChange}

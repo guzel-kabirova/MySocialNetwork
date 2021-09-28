@@ -18,7 +18,10 @@
 }
 .authName {
     margin-right: 12px;
+    color: var(--color-white);
+    font: var(--font-basic);
     font-weight: bold;
+    cursor: pointer;
 }
 
 .user {

@@ -66,11 +66,13 @@
     letter-spacing: 0.045em;
     width: 184px;
     height: 32px;
+    cursor: pointer;
 }
 .btn:disabled {
     background-color: var(--color-grey-light);
     color: var(--color-grey);
     box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.15);
+    cursor: not-allowed;
 }
 .btnPrimary {
     margin-top: 80px;

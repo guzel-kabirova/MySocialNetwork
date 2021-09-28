@@ -1,5 +1,6 @@
 .stateWrapper {
     margin-bottom: 20px;
+    cursor: pointer;
 }
 .stateWrapper div {
     font: var(--font-basic);
