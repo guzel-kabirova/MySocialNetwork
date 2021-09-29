@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import {BrowserRouter, Route} from 'react-router-dom';
+import {BrowserRouter, Redirect, Route} from 'react-router-dom';
 import Navbar from './components/Navbar/Navbar';
 import UsersContainer from './components/Users/UsersContainer';
 import ProfileContainer from './components/Profile/ProfileContainer';
@@ -35,6 +35,7 @@ class App extends React.Component {
                 <Navbar/>
                 <div className="app-wrapper-content">
                     <React.Suspense fallback={<Preloader/>}>
+                        <Redirect from='/' to='/profile'/>
                         <Route path="/profile/:userId?"
                                render={() => <ProfileContainer/>}/>
                         <Route path="/dialogs"

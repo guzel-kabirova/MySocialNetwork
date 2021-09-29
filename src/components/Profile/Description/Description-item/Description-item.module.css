@@ -3,16 +3,18 @@
 }
 
 .descriptionItem span {
-    font: normal 16px Century Gothic, Arial, sans-serif;
+    font: var(--font-subtitle);
     margin-bottom: 8px;
 }
 
 .descriptionItem span:first-child {
-    color: #797878;
-    width: 168px;
+    color: var(--color-grey);
+    width: 50%;
 }
 
 .descriptionItem span:last-child {
-    color: #150E08;
+    color: var(--color-black);
+    width: 50%;
+    flex-grow: 1;
 }
 

@@ -84,3 +84,12 @@
     margin: 0 0 4px;
     font: var(--font-title);
 }
+
+.commonErrorBlock {
+    width: fit-content;
+    padding: 12px 6px;
+    font: var(--font-text);
+    color: var(--color-errors);
+    background-color: var(--color-primary);
+    margin-bottom: 10px;
+}

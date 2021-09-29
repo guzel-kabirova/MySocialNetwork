@@ -15,25 +15,10 @@ export const LoginForm = (props) => {
         const {setSubmitting, setStatus} = onSubmitProps;
         props.login(values, setSubmitting, setStatus);
     };
-    // const validate = values => {
-    //     const errors = {}
-    //     if(!values.email) {
-    //         errors.email = 'Обязательное поле!'
-    //     } else if (
-    //         !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email)
-    //     ) {
-    //         errors.email = 'Электронная почта введена неправильно';
-    //     }
-    //
-    //     if(!values.password) {
-    //         errors.password = 'Обязательное поле!'
-    //     }
-    //
-    //     return errors;
-    // };
     const validationSchema = Yup.object({
         email: Yup.string().email('Проверьте корректность ввода почты').required('Обязательное поле'),
         password: Yup.string().required('Обязательное поле')
+        // captcha: Yup.string().required('Обязательное поле')
     });
 
     return <Formik initialValues={initialValues}

@@ -15,7 +15,7 @@ export const auth = {
             .then(response => response.data);
     },
     login(loginData) {
-        const {email, password, isRemembered, captcha} = loginData;
+        const {email, password, isRemembered, captcha = null} = loginData;
         return instance
             .post(`auth/login`, {
                 email,
@@ -27,12 +27,12 @@ export const auth = {
     },
     logout() {
         return instance
-            .delete(`/auth/login`)
+            .delete(`auth/login`)
             .then(response => response.data);
     },
     security() {
         return instance
-            .get(`/security/get-captcha-url`)
+            .get(`security/get-captcha-url`)
             .then(response => response.data);
     }
 };
@@ -46,13 +46,13 @@ export const profile = {
 
     getUserStatus(userId) {
         return instance
-            .get(`/profile/status/${userId}`)
+            .get(`profile/status/${userId}`)
             .then(response => response.data);
     },
 
     updateMyStatus(status) {
         return instance
-            .put(`/profile/status`, {status: status})
+            .put(`profile/status`, {status: status})
             .then(response => response.data);
     },
 
@@ -60,7 +60,7 @@ export const profile = {
         const formData = new FormData();
         formData.append('image', profilePhoto);
         return instance
-            .put(`/profile/photo`, formData, {
+            .put(`profile/photo`, formData, {
                 headers: {
                     'Content-Type': 'multipart/form-data'
                 }
@@ -68,9 +68,8 @@ export const profile = {
             .then(response => response.data)
     },
     updateProfileDescription(profileData) {
-        debugger
         return instance
-            .put(`/profile`, profileData)
+            .put(`profile`, profileData)
             .then(response => response.data);
     }
 };

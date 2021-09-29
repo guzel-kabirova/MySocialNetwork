@@ -40,11 +40,9 @@ const setCaptcha = (captcha) => ({
     captcha
 });
 
-const getCaptcha = () => (dispatch) => {
-    auth.security()
-        .then(data => {
-            dispatch(setCaptcha(data.url));
-        });
+const getCaptcha = () => async (dispatch) => {
+    const data = await auth.security();
+    dispatch(setCaptcha(data.url));
 };
 
 export const getAuthData = () => async (dispatch) => {
@@ -61,10 +59,11 @@ export const login = (values, setSubmitting, setStatus) => async (dispatch) => {
     if (data.resultCode === 0) {
         dispatch(getAuthData());
         dispatch(setCaptcha(null));
-    } else if (data.resultCode === 1) {
+    } else {
+        if (data.resultCode === 10) {
+            dispatch(getCaptcha());
+        }
         setStatus(data.messages.join(', '));
-    } else if (data.resultCode === 10) {
-        dispatch(getCaptcha());
     }
 };
 
